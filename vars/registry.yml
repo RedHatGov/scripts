@@ -1,0 +1,15 @@
+---
+
+openshift_cli: '/usr/bin/oc'
+registry_host_fqdn: '{{ vault_registry_host_fqdn }}'
+registry_host_port: '0'
+ocp_cluster_user_user: '{{ vault_ocp_cluster_user_user }}'
+ocp_cluster_user_password: '{{ vault_ocp_cluster_user_password }}'
+ocp_cluster_console_url: '{{ vault_ocp_cluster_console_url }}'
+ocp_cluster_console_port: '6443'
+staging_dir: '/tmp'
+ignition_config_version: ''
+
+#####################################################################################################
+# End of user configurable variables
+#####################################################################################################

@@ -1,0 +1,7 @@
+### use this template as sample to create your vault file by populating the following variables
+vault_registry_host_fqdn: ''
+
+### Variable for OCP cluster 
+vault_ocp_cluster_user_user: ''
+vault_ocp_cluster_user_password: ''
+vault_ocp_cluster_console_url: ''
