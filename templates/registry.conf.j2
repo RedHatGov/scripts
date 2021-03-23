@@ -6,7 +6,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   mirror-by-digest-only = false
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}/openshift-release-dev"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_ocp_repository }}/openshift-release-dev"
 
 [[registry]]
   prefix = ""
@@ -14,7 +14,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   mirror-by-digest-only = false
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}/openshift-release-dev"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_ocp_repository }}/openshift-release-dev"
 
 [[registry]]
   prefix = ""
@@ -23,7 +23,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
@@ -33,7 +33,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
@@ -43,7 +43,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
@@ -53,7 +53,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
@@ -63,7 +63,7 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
@@ -73,10 +73,10 @@ unqualified-search-registries = ["registry.access.redhat.com", "docker.io"]
   insecure = true
 
   [[registry.mirror]]
-    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+    location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
     insecure = true
 
 [[registry]]
   prefix = ""
-  location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}"
+  location = "{{ registry_host_fqdn }}{{ registry_host_port_fixed }}{{ registry_local_operator_repository }}"
   insecure = true
